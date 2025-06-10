@@ -1,0 +1,15 @@
+{
+  "telegram_token": "XXXXXXX:YYYYYYYYYYYYYYYYYYYYYYYYYYYY",
+  "vas3k_token": "*****************************",
+  "event_start": 1749110400,
+  "event_end": 1749315600,
+  "test_group": [
+    -1
+  ],
+  "admin_group": [
+    -1
+  ],
+  "notify_group": [
+    -1
+  ]
+}

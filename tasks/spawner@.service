@@ -1,0 +1,13 @@
+[Unit]
+Description=Shell Spawner for %I
+
+[Service]
+Environment=TASK=%I
+ExecStart=/home/shelltask/spawner.pl
+WorkingDirectory=/home/shelltask
+Restart=always
+User=shelltask
+Group=shelltask
+
+[Install]
+WantedBy=multi-user.target

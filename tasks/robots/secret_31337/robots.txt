@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /flag_73313.html
+

@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://vas3k.blog/ -->
+<html lang="ru" theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Вастрик</title>
+
+        <meta name="description" content="Авторский блог о выживании в мире технологий и происходящем вокруг киберпанке">
+        <meta name="keywords" content="">
+        <meta name="author" content="@vas3k">
+        <meta name="yandex-verification" content="5f66353ad89fbe6f">
+        <meta name="fediverse:creator" content="@vas3k@mastodon.online">
+        <meta name="google-site-verification" content="B8zgWa65q_o7zEV-YAA3rmgq4AlT-l37W-2nNbDE6pc">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="canonical" href="https://vas3k.blog/">
+
+            <meta property="og:title" content="Вастрик">
+            <meta property="og:url" content="https://vas3k.blog">
+            <meta property="og:type" content="website">
+            <meta property="og:image" content="https://vas3k.blog//static/images/favicon_128.png">
+            <meta property="og:description" content="Авторский блог о выживании в мире технологий и происходящем вокруг киберпанке">
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Вастрик">
+            <meta name="twitter:description" content="Авторский блог о выживании в мире технологий и происходящем вокруг киберпанке">
+            <meta name="twitter:image" content="https://vas3k.blog//static/images/favicon_128.png">
+            <meta name="twitter:image:src" content="https://vas3k.blog//static/images/favicon_128.png">
+
+        <link rel="alternate" type="application/rss+xml" title="Full feed" href="https://vas3k.blog/rss/">
+
+
+<link rel="icon" type="image/png" href="https://vas3k.blog/static/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://vas3k.blog/static/images/favicon_64.png" sizes="64x64">
+<link rel="icon" type="image/png" href="https://vas3k.blog/static/images/favicon_128.png" sizes="128x128">
+<link rel="shortcut icon" type="image/png" href="https://vas3k.blog/static/images/favicon_square.png">
+<link rel="apple-touch-icon" type="image/png" href="https://vas3k.blog/static/images/favicon_square.png">
+<link rel="mask-icon" href="https://vas3k.blog/static/images/favicon_128.png" color="#5954ca">
+
+
+<link rel="stylesheet" href="/_files/normalize.css">
+<link rel="stylesheet" href="/_files/fonts.css">
+<link rel="stylesheet" href="/_files/theme.css">
+<link rel="stylesheet" href="/_files/base.css">
+<link rel="stylesheet" href="/_files/layout.css">
+<link rel="stylesheet" href="/_files/cards.css">
+<link rel="stylesheet" href="/_files/posts.css">
+<link rel="stylesheet" href="/_files/comments.css">
+<link rel="stylesheet" href="/_files/donates.css">
+<link rel="stylesheet" href="/_files/users.css">
+<link rel="stylesheet" href="/_files/fontawesome.css">
+<link rel="stylesheet" href="/_files/monokai_sublime.css">
+
+
+
+<script src="/_files/highlight.pack.js" async=""></script>
+<script src="/_files/tweemoji.min.js"></script>
+<script src="/_files/lightense.min.js"></script>
+<script src="/_files/htmx.min.js"></script>
+<script src="/_files/main.js"></script>
+<script src="/_files/comments.js"></script>
+
+<script>
+    window.addEventListener("htmx:configRequest", (event) => {
+        event.detail.headers["X-CSRFToken"] = "6WeNTZIGUOLmvPt6EysSFUvG7yqD9ocUe91m33pyvVVaV0Y2SJK8bUSaohVHreY6";
+    })
+</script>
+
+
+        <script>
+            const theme = localStorage.getItem('theme') ||
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('theme', theme);
+
+            htmx.onLoad(function() {
+                const themeSwitch = document.querySelector('.theme-switcher input[type="checkbox"]');
+                if (themeSwitch) {
+                    themeSwitch.checked = (theme === 'dark');
+                }
+            });
+        </script>
+    <style>                      .htmx-indicator{opacity:0;transition: opacity 200ms ease-in;}                      .htmx-request .htmx-indicator{opacity:1}                      .htmx-request.htmx-indicator{opacity:1}                    </style><style id="lightense-images-css">
+:root {
+  --lightense-z-index: 5;
+  --lightense-backdrop: rgba(0, 0, 0, .1);
+  --lightense-duration: 50ms;
+  --lightense-timing-func: cubic-bezier(.2, 0, .1, 1);
+}
+
+.lightense-backdrop {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: calc(var(--lightense-z-index) - 1);
+  padding: 0;
+  margin: 0;
+  transition: opacity var(--lightense-duration) ease;
+  cursor: zoom-out;
+  opacity: 0;
+  background-color: var(--lightense-backdrop);
+  visibility: hidden;
+}
+
+@supports (-webkit-backdrop-filter: blur(30px)) {
+  .lightense-backdrop {
+    background-color: var(--lightense-backdrop);
+    -webkit-backdrop-filter: blur(30px);
+  }
+}
+
+@supports (backdrop-filter: blur(30px)) {
+  .lightense-backdrop {
+    background-color: var(--lightense-backdrop);
+    backdrop-filter: blur(30px);
+  }
+}
+
+.lightense-wrap {
+  position: relative;
+  transition: transform var(--lightense-duration) var(--lightense-timing-func);
+  z-index: var(--lightense-z-index);
+  pointer-events: none;
+}
+
+.lightense-target {
+  cursor: zoom-in;
+  transition: transform var(--lightense-duration) var(--lightense-timing-func);
+  pointer-events: auto;
+}
+
+.lightense-open {
+  cursor: zoom-out;
+}
+
+.lightense-transitioning {
+  pointer-events: none;
+}</style></head>
+    <body class="" style="">
+
+
+
+
+<div class="header h-card">
+    <a href="https://vas3k.blog/" class="header-logo u-url">
+        <img src="/_files/logo.png" alt="" class="header-logo-image u-photo">
+        <span class="header-logo-title p-name">Вастрик</span>
+    </a>
+
+    <div class="button button-inverted button-round header-burger show-on-iphone" onclick="return document.getElementById(&#39;header-menu&#39;).classList.toggle(&#39;header-menu-visible&#39;);">
+        ≡
+    </div>
+
+    <div class="header-menu hide-on-iphone" id="header-menu" hx-boost="true">
+        <a href="https://vas3k.blog/all/" class="button button-inverted header-menu-item">
+            <span><img draggable="false" class="emoji" alt="✏️" src="/_files/270f.png"></span>
+            <span>Посты</span>
+        </a>
+
+
+            <a href="https://vas3k.blog/world/" class="button button-inverted header-menu-item">
+                <span><img draggable="false" class="emoji" alt="🌍" src="/_files/1f30d.png"></span>
+                <span>Путешествия</span>
+            </a>
+
+
+        <a href="https://vas3k.blog/subscribe/" class="button button-inverted header-menu-item">
+            <span><img draggable="false" class="emoji" alt="✅" src="/_files/2705.png"></span>
+            <span>Подписаться</span>
+        </a>
+
+        <a href="https://vas3k.blog/donate/" class="button button-inverted header-menu-item">
+            <span><img draggable="false" class="emoji" alt="👍" src="/_files/1f44d.png"></span>
+            <span>Донат</span>
+        </a>
+
+        <div class="button button-inverted button-round header-menu-item header-menu-round" onclick="return toggleHeaderSearch(event, &#39;#header-search&#39;);">
+            <img draggable="false" class="emoji" alt="🔍" src="/_files/1f50d.png">
+        </div>
+
+
+            <a href="https://vas3k.blog/profile/" class="button button-inverted avatar header-menu-item header-menu-round">
+                <img draggable="false" class="emoji" alt="👤" src="/_files/1f464.png">
+            </a>
+
+    </div>
+</div>
+
+<div class="header-search header-search-hidden" id="header-search">
+    <div class="header-search-form">
+        <form action="https://www.google.ru/search?q=site%3Avas3k.blog+">
+            <input type="hidden" name="domains" value="vas3k.blog">
+            <input type="hidden" name="sitesearch" value="vas3k.blog">
+            <input type="text" name="q" placeholder="Искать по сайту..." class="header-search-form-input">
+            <button type="submit" class="header-search-form-submit"><img draggable="false" class="emoji" alt="🔍" src="/_files/1f50d.png"></button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+            <section class="container">
+    <div class="cards-group cards-group-1x">
+
+
+
+<a href="https://vas3k.blog/notes/taxhacker/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/665566cecfd7581d2a537d1b5680b5b6640f7c513cd09b87d5c3b7cf85100579.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;35.5K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">TaxHacker</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Как я оптимизирую свои немецкие налоги с помощью AI</span>
+
+    </span>
+</a>
+
+
+    </div>
+</section>
+
+
+
+
+            <section class="container container-width-max">
+
+
+    <div class="cards-group cards-group-3x">
+
+
+
+<a href="https://vas3k.blog/blog/end_to_end_encryption/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/cd8576e62f0513d8599e828d305186a0d09c936fa42a1eeab03a3738e5af085b.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;69.3K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">End-to-end Шифрование</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Как мы перестали доверять облакам и научились шифровать</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/2024/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/2aca7f6c46e9d50b2d376bfbaff68e562e2e107a51897ae23f91986de38490a1.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;60.2K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Итоги Года 2024</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Год превосходства оффлайна</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.club/post/26085/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.club/a62db5dc087eeedd2f67b8516187cf9fc8f4ff6c0c108b9eea9b432880267bd9.jpg&#39;);" target="_blank" rel="noopener">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;16K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Вастрик <img draggable="false" class="emoji" alt="⛵" src="/_files/26f5.png"> Флот</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Яхтить по Адриатике, ночевать в шторм, потерять два якоря, вернуться новым человеком</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.club/post/24576/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/172384ef837accf1d4f90a6d4ad1f2e634c0908f7a287bc8d9fb7bffa7b6c9c0.jpg&#39;);" target="_blank" rel="noopener">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;25.9K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Вастрик <img draggable="false" class="emoji" alt="🔥" src="/_files/1f525.png"> Кэмп: как это было</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Сербское село, купание в водопаде на рассвете, гонки на FPV-дронах и рейв с полицией</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/2023/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/afdb23d87081e8f75626f5bfdcf9f4bb3f452b3550e196b1b49357b31410e685.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;91.1K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Итоги Года 2023</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Разочарование, большие проекты и новые силы</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/cccamp/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/a74d09517827f1b70e159457105e76326dba93731ddf939f9556cb0e179158fd.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;51.5K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Chaos Communication Camp 2023</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Бернинг мен для хакеров или способ заново полюбить технологии</span>
+
+    </span>
+</a>
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="container block index-block-about">
+    <div class="index-block-about-title">
+        <p>
+            Привет <img draggable="false" class="emoji" alt="👋" src="/_files/1f44b.png"> Я Вастрик!
+        </p>
+    </div>
+
+    <div class="index-block-about-description">
+        <p>В этом блоге я пишу о технологиях, всратом айти и выживании в творящемся вокруг киберпанке. Делаю это уже больше 10 лет.</p>
+<p>Я <a href="https://www.linkedin.com/in/vas3k/" target="_blank" rel="noopener">программист</a>, техлид. Живу в <a href="https://vas3k.blog/blog/go_to_berlin/">Берлине</a> <img draggable="false" class="emoji" alt="🇩🇪" src="/_files/1f1e9-1f1ea.png"> и нежно люблю его. До этого жил в <a href="https://vas3k.blog/world/what_is_lithuania/">Литве</a> <img draggable="false" class="emoji" alt="🇱🇹" src="./Вастрик_files/1f1f1-1f1f9.png">, а <a href="https://vas3k.blog/world/nskflat/">рос</a> и учился в Новосибирске <img draggable="false" class="emoji" alt="🥶" src="./Вастрик_files/1f976.png"></p>
+<p>У меня есть пёс, <a href="https://vas3k.blog/blog/bus_2022/">Бус</a> и <a href="https://vas3k.club/" target="_blank" rel="noopener">Клуб</a>. Ну и еще мелкие <a href="https://github.com/vas3k" target="_blank" rel="noopener">пет-проджекты</a>.</p>
+
+    </div>
+
+    <div class="index-block-about-contacts">
+
+
+
+<section class="contacts">
+
+        <a href="https://t.me/vas3k_channel" class="contacts-item" target="_blank" rel="noopener">
+            <i class="fab fa-telegram"></i><span>Телеграм-канал</span>
+        </a>
+
+
+    <a href="https://twitter.com/vas3k" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fab fa-twitter-square"></i>
+        <span>Твиттер</span>
+    </a>
+
+    <a href="https://mastodon.online/@vas3k" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fab fa-mastodon"></i>
+        <span>Мастодон</span>
+    </a>
+
+    <a href="https://bsky.app/profile/vas3k.bsky.social" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fas fa-dove"></i>
+        <span>Блюскай</span>
+    </a>
+
+    <a href="https://www.patreon.com/vas3k" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fab fa-patreon"></i>
+        <span>Патреон</span>
+    </a>
+
+    <a href="https://github.com/vas3k" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+        <span>Гитхаб</span>
+    </a>
+
+    <a href="mailto:me@vas3k.ru" class="contacts-item" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+        <span>me@vas3k.ru</span>
+    </a>
+
+    <a href="https://vas3k.blog/rss/" class="contacts-item" target="_blank" rel="syndication">
+        <i class="fas fa-rss-square"></i>
+        <span>RSS</span>
+    </a>
+</section>
+    </div>
+</section>
+
+
+
+
+            <section class="container container-width-max">
+
+        <div class="header-1">
+
+                <a href="https://vas3k.blog/notes/">Заметки</a>
+
+        </div>
+
+
+
+
+    <div class="cards-group cards-group-4x">
+
+
+
+<a href="https://vas3k.blog/notes/taxhacker/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/665566cecfd7581d2a537d1b5680b5b6640f7c513cd09b87d5c3b7cf85100579.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;35.5K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">TaxHacker</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Как я оптимизирую свои немецкие налоги с помощью AI</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/vibe_coding/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/8dbf6c3d1609de6ed1c89dc6b893a2cbd2dfd37c8400fa258255ac055bbe59cc.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;59.8K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Вайб-кодинг</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Новый способ программирования в эпоху GenAI</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/sponsorblock/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/05c36f24ed5ec13ab749edd6e9782ce9d09c424826036d94dfdec7a942d3de23.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;36.8K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">SponsorBlock: скипаем рекламу внутри ютюб-роликов даже AppleTV</span>
+        </span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/stickers/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/6e5af98779defe01bae2e554ae51b079397e64a6c3f94045c536d9f888459cf0.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;37.6K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Заметки из гаража #2: печатаем домашние стикеры, футболки, винилы на машину</span>
+        </span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/indie_vs_corpo/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/54b5a380ce87174074bf8def44f825dc565ba2ed94e7ec5ea8a36516ee3428c6.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;172.8K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name"><img draggable="false" class="emoji" alt="👩‍🎤" src="/_files/1f469-200d-1f3a4.png"> Инди vs Корпорат <img draggable="false" class="emoji" alt="👨‍💼" src="./Вастрик_files/1f468-200d-1f4bc.png"></span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Почему стек и подход к пет-проектам диаметрально противоположен тому, что вы делаете на работе</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/makita/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/4df3eb8d1bc6005aec371c0feddeb494e62c3a89cd1988cb23c8276c5d8f74d2.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;40.9K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Заметки из гаража: факультеты Makita, Ryobi, Bosch, DeWalt, Milwaukee</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">На какой поступать? Чо так дорого?</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/pets_vs_cattle/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/3cba81e0f1fe09cf434e3ee5f73782ca1a9e54aa0639f9d39ed4d0d81b057aec.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;142.3K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Pets vs. Cattle</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">«Питомцы vs. Скот». 99% вашей работы в итоге выбросят. Но это и сделает вас профессионалом</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/moderation/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/b4d6d8035bafbbc7216f6e5ad2769704bce983444d6d615a447c39936510a8af.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;55.1K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Модерацию невозможно сделать правильно</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Но без неё ваше сообщество точно умрёт</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/softskills/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/47fd0fd1f658528029c4c7cc7b7a4d34bc3782cbc63f122de14fc36798a88d61.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;88.8K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Софт скиллы: разбираемся раз и навсегда</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Мой неканоничный метод</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/chatgpt/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/49b7ffd57b141bb12eff8f1f54e60a388c924a60f79ee732fcf22311b7c8d9ed.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;89K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">ChatGPT. Когда нас уже заменят нейросетями?</span>
+        </span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/notes/homelab_2022/" class="card card-post card-vertical h-entry" style="background-image: url(&#39;https://i.vas3k.blog/f8b4c9462d0bb1ce9b45c0a4b9c67c1dd7303b340587ae22f7616c4fc817b472.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;104.9K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Дом-дурачок. 3 года спустя</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">+ много пропаганды селф-хостинга</span>
+
+    </span>
+</a>
+
+
+    </div>
+</section>
+
+
+
+            <section class="container container-width-max">
+
+        <div class="header-1">
+
+                <a href="https://vas3k.blog/world/">Отвратительные путешествия</a>
+
+        </div>
+
+
+    <div class="cards-group cards-group-3x">
+
+
+
+<a href="https://vas3k.blog/world/japan/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/1530c016701c4a320d17f6e7eb8184bd0e874f7b846aaca4f4a542c03371aeb3.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;95.3K</span>
+    <span class="card-info">
+        <span style="font-size: 160%;">
+            <span class="card-title p-name">Япония</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Дай интровертам остров и заставь строить «идеальную страну»</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/south_africa/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/2b2bc4bacfaa8f59c9ea6cbbbaad9cab407660ad2c80193338e0a095dde77f7f.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;51.4K</span>
+    <span class="card-info">
+        <span style="font-size: 180%;">
+            <span class="card-title p-name">Южная Африка</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">DON'T BE KAK. BE LEKKER ©</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/normandy/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/33fd76b36f062483beb508a10ce7aa8bf8bcfbe69bf1e1d39e7ed095d6d6f3c8.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;36.3K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Нормандия</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Дорога сидра, устричные фермы, день «Д» и пираты</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/nskflat/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/7ua.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;86.1K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Сибирская хатка Вастрика</span>
+        </span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/portugal/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/7g8.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;73.3K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">На патибасе через Португалию</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Лиссабон, Порту, деревня в камнях, тамплиеры, самые большие волны, портвейн из бочки и западная точка Европы</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/iceland/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/6kz.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;64.1K</span>
+    <span class="card-info">
+        <span style="font-size: 190%;">
+            <span class="card-title p-name">Исландия</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Если вам не нравится наша погода, подождите всего 10 минут — она станет еще хуже</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/kanonerka/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/6vf.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;61.3K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Half-Life 3: Канонерский Остров</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Постапокалипсис в Санкт-Петербурге</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/world/konigsberg/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/6sx.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;60.5K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Кёнигсберг. Место с изменённой историей</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Путешествие в альтернативный мир по Калининградской области</span>
+
+    </span>
+</a>
+
+
+    </div>
+</section>
+
+
+
+
+
+            <section class="container">
+
+        <div class="header-1">
+
+                Нетленки
+
+        </div>
+
+
+    <div class="cards-group cards-group-2x">
+
+
+
+<a href="https://vas3k.blog/blog/quantum_computing/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/70deb67a2d05026b4d24bc3b2e0048394f4963828e140c2391cd84a415fe149f.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;236.2K</span>
+    <span class="card-info">
+        <span style="font-size: 130%;">
+            <span class="card-title p-name">Квантовый Компьютер</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Как устроен? Как программировать? Уже?</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/team/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/bced2c2166dc8f3246a53a78c702fcd14b34ee0f64e0d8918a7d3921b64d3755.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;187.3K</span>
+    <span class="card-info">
+        <span style="font-size: 120%;">
+            <span class="card-title p-name">К — Команда</span>
+        </span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/computational_photography/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/853.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;646.8K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Вычислительная Фотография</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Будущее фотографии — это код</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/machine_learning/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/80c.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;1.2M</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Машинное обучение для людей</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Разбираемся простыми словами</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/touchbar/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/7dj.jpg&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;191.1K</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Делаем тачбар наконец-то полезным</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Полностью отказавшись от идей Apple</span>
+
+    </span>
+</a>
+
+
+
+
+<a href="https://vas3k.blog/blog/blockchain/" class="card card-post card-horizontal h-entry" style="background-image: url(&#39;https://i.vas3k.blog/72a.png&#39;);">
+
+    <span class="card-views"><i class="fas fa-eye"></i>&nbsp;1.4M</span>
+    <span class="card-info">
+        <span>
+            <span class="card-title p-name">Блокчейн изнутри: как устроен биткоин</span>
+        </span>
+
+            <span class="clearfix10"></span>
+            <span class="card-subtitle p-summary">Разбираемся раз и навсегда человеческим языком</span>
+
+    </span>
+</a>
+
+
+    </div>
+</section>
+
+
+
+
+            <section class="container">
+
+        <div class="header-1">
+            Проекты
+        </div>
+
+
+    <div class="cards-group cards-group-3x cards-group-projects">
+        <a href="http://vas3k.club/" class="card card-post card-vertical" style="background-image: url(&#39;https://i.vas3k.ru/235b9705e449cd3c4e0d48ff41fe31196d6cbe359cdbd45e24359ac555fb9a0d.png&#39;);" target="_blank" rel="noopener">
+            <span class="card-info">
+                <span class="card-title p-name">Вастрик.Клуб</span>
+                <span class="card-subtitle p-summary">Наше уютное закрытое коммьюнити на краю большого интернета</span>
+            </span>
+        </a>
+
+        <a href="https://howtoberlin.de/" class="card card-post card-vertical" style="background-image: url(&#39;https://i.vas3k.ru/fa05b3c8ef78a2df7d6098a42f110f83a2d4e50439134dabafb892a1a062cfdc.png&#39;);" target="_blank" rel="noopener">
+            <span class="card-info">
+                <span class="card-title p-name">How to Berlin</span>
+                <span class="card-subtitle p-summary">Помогаем переехать в Берлин и не сойти с ума</span>
+            </span>
+        </a>
+
+        <a href="https://infomate.club/" class="card card-post card-vertical" style="background-image: url(&#39;https://i.vas3k.ru/47b9b0180d8eb1a9ee13ed45a0328a11da46661a15a4f813ebe10f106ca559a9.png&#39;);" target="_blank" rel="noopener">
+            <span class="card-info">
+                <span class="card-title p-name">Infomate</span>
+                <span class="card-subtitle p-summary">Чтобы оставаться в курсе событий и получать информацию из разных источников</span>
+            </span>
+        </a>
+    </div>
+</section>
+
+
+
+
+
+
+            <footer class="footer">
+
+                    <div class="contacts">
+                        <div>Для связи →</div>
+                        <a href="mailto:me@vas3k.ru" class="contacts-item" target="_blank" rel="noopener">
+                            <i class="fas fa-envelope"></i>
+                            <span>me@vas3k.ru</span>
+                        </a>
+                        <a href="https://t.me/to_vas3k_bot" class="contacts-item" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                            <span>Телеграм-бот</span>
+                        </a>
+                        <a href="https://twitter.com/vas3k" class="contacts-item" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter-square"></i>
+                            <span>Твиттер</span>
+                        </a>
+                    </div>
+
+
+                <div class="footer-warning">
+                    Вы можете использовать цитаты из статей, картинки и скриншоты в своих блогах и презентациях, если поставите ссылку на оригинальный пост. Присылайте ссылки на них мне в личку, мне будет приятно посмотреть как моё странное творчество идет в народ. В коммерческих целях ничего использовать нельзя.
+                </div>
+
+                <div class="footer-buttons">
+
+
+
+
+                            <a href="https://vas3k.com/" class="button button-inverted button-round header-menu-item header-menu-round" target="_blank" rel="noopener">EN</a>
+
+
+
+                    <label class="theme-switcher button button-inverted button-round header-menu-item header-menu-round" onclick="return toggleTheme(event);" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </footer>
+
+
+
+    <script defer="" src="/_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9495f65a89186ada&quot;,&quot;version&quot;:&quot;2025.5.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;86e3220f5c1b407e854a6ae858f64b15&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+<div class="lightense-backdrop"></div></body></html>
